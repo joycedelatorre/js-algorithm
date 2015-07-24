@@ -1,4 +1,4 @@
-// basic palindrome
+//////////////// BASIC ONE WORD PALINDROMES
 
 function palindrome(str) {
   word_array = str.split("")
@@ -32,7 +32,7 @@ palindrome("kayak");
 palindrome("dad");
 
 ------------------------------------
-// second solution
+/////////////////// SECOND SOLUTION FOR STRINGS WITH NON-WORD CHARACTERS
 
 function palindrome(str){
   var myReg = /\w/g;
@@ -65,7 +65,7 @@ function palindrome(str){
 palindrome("A man, a plan, a canal. Panama");
 palindrome("race car");
 ----------------------------------
-// third solution
+///////////////////// THIRD SOLUTION FOR NEITHER EVEN NOR ODD
 function palindrome(str){
   var myReg = /\w/g;
   var word_array = str.match(myReg).join("").toLowerCase().split("");
